@@ -10,16 +10,16 @@ class Casino {
     }
     playGame(num) {
         let randomNum = Math.random() 
-        if (this.fakeCoin or randomNum < .5) {
+        if (this.fakeCoin || randomNum < .5) {
             console.log(`${this.name} wins`)
         } else { 
             let winnings = bet * this.timesPlayed + 1
             console.log(`you win $${winnings}`)
 
         }
-        }
         this.timesPlayed += 1;
-
+    }
+    
 
     };
 
